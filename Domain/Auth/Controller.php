@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Domain\Auth;
 
-use App\Http\Requests\AuthRequest;
+//use \Domain\Core\Http\Controller;
 use Auth;
 use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
 //use Illuminate\Http\Request;
 
-class AuthController extends Controller
+class Controller extends \Domain\Core\Http\Controller
 {
-    public function Login(AuthRequest $request)
+    public function Login(Request $request)
     {
       // grab credentials from the request
       $credentials = $request->only('username', 'password');
