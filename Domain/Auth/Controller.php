@@ -2,7 +2,6 @@
 
 namespace Domain\Auth;
 
-//use \Domain\Core\Http\Controller;
 use Auth;
 use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;

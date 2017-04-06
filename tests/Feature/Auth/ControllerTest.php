@@ -1,14 +1,14 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\Auth;
 
 use Domain\User\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class AuthControllerTest extends TestCase
+class ControllerTest extends TestCase
 {
-  use DatabaseTransactions;
+  //use DatabaseTransactions;
 
   public function testLogin()
   {
@@ -28,7 +28,7 @@ class AuthControllerTest extends TestCase
 
     //Asserts
     $response->assertStatus(200);
-    /**$response->assertJson([
+    /*$response->assertJson([
       'username' => 'emtudo',
     ]);**/
   }
